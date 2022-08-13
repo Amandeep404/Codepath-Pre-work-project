@@ -16,10 +16,19 @@ class MainActivity : AppCompatActivity() {
             tvOutput.text = etName.text.toString()
         }
         btnChangeTextColor.setOnClickListener{
-            tvOutput.setTextColor(Color.YELLOW)
+            tvOutput.setTextColor(Color.BLUE)
         }
         btnChangeViewColor.setOnClickListener{
             mainView.setBackgroundColor(Color.LTGRAY)
         }
+        mainView.setOnClickListener{
+            tvOutput.text = "Hello from Amandeep!"
+            tvOutput.setTextColor(Color.BLACK)
+            mainView.setBackgroundColor(Color.WHITE)
+            etName.setText("")
+
+
+        }
+
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@color/white"
     android:id="@+id/mainView"
     >
 
@@ -15,14 +15,16 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="@color/white"
+        android:inputType="none"
+        android:text=""
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/tvOutput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent" />
+
+        />
 
     <TextView
         android:id="@+id/tvOutput"
